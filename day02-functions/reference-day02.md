@@ -3,8 +3,8 @@
 | Type                 | Description                                  | Example                  |
 | :------------------- | :------------------------------------------- | :----------------------- |
 | Function Declaration | Named function defined with function keyword | function greet() {}      |
-| Function Declaration | Function stored in a variable                | const fn = function() {} |
-| Function Declaration | Shorter syntax using =>                      | const fn = () => {}      |
+| Function Expression  | Function stored in a variable                | const fn = function() {} |
+| Arrow Function       | Shorter syntax using =>                      | const fn = () => {}      |
 
 # Parameters
 
@@ -18,7 +18,7 @@
 - Sends a value back to the caller.
 - Early return pattern:
 
-  ```js
+  ```**js**
   if (condition) return value;
   return otherValue;
   ```
@@ -46,8 +46,6 @@
 - Can be anonymous.
 - Useful for callbacks and storing functions as values.
 
-- Example:
-
 ```js
 const multiply = function (x, y) {
   return x * y;
@@ -60,14 +58,15 @@ const multiply = function (x, y) {
   Variables declared with let or const inside {} are not accessible outside.
 - Function Scope:
   Variables declared inside a function exist only within that function.
-  Global Scope:
-- Accessible everywhere unless shadowed by a local variable.
-  Shadowing:
-- A local variable with the same name hides the global variable inside its scope.
+- Global Scope:
+  Accessible everywhere unless shadowed by a local variable.
+- Shadowing:
+  A local variable with the same name hides the global variable inside its scope.
 
 # Returning Objects
 
 - Must wrap object literal in parentheses:
+  
   ```js
   const makeUser = (name, age) => ({ name, age });
   ```

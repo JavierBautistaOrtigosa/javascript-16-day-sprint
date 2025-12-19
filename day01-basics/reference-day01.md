@@ -1,28 +1,22 @@
 # Variables
 
-let: declares a block-scoped variable.
-const: declares a block-scoped constant.
+- let: declares a block-scoped variable.
+- const: declares a block-scoped constant.
+
+- **Question: **
+- Explain what is block-scoped variable & block scoped constant.
 
 # Data Types
 
-
-string	Textual data	'hello'
-number	Numeric data	42
-boolean	True or false	true
-null	Intentional absence of value	null
-undefined	Variable declared but no value	undefined
-bigint	Large integers	9007199254740991n
-symbol	Unique identifiers	Symbol('id')
-
 |Type           |Description                        |Example            |
 |:--------------|:----------------------------------|:------------------|	
-|string         |Textual data                       |'hello'|
-|number         |Numeric data                       |42|
-|boolean        |True or false                      |true|
-|null           |Intentional absence of value       |null|
-|undefined      |Variable declared but no value     |undefined|
-|bigint         |Large integers                     |9007199254740991n|
-|symbol         |Unique identifiers                 |Symbol('id')|
+|string         |Textual data                       |'hello'            |
+|number         |Numeric data                       |42                 |
+|boolean        |True or false                      |true               |
+|null           |Intentional absence of value       |null               |
+|undefined      |Variable declared but no value     |undefined          |
+|bigint         |Large integers                     |9007199254740991n  |
+|symbol         |Unique identifiers                 |Symbol('id')       |
 
 # typeof Operator
 
@@ -54,3 +48,9 @@ symbol	Unique identifiers	Symbol('id')
 - == vs ===: == does type coercion, === does strict comparison.
 - Uninitialized variables have the value undefined.
 - BigInt literals end with n.
+
+- **Question:**
+- What is type coercion?
+- What is strict comparison?
+- What is uninitialized variables?
+  

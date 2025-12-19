@@ -28,3 +28,11 @@
 - Functions can be declared with the function keyword or as arrow functions.
 - Functions can have parameters with default values.
 - Functions can return values or log directly.
+
+## **Questions?**
+
+- What exactly are primitive data types?
+- What other data types exist?
+- What exactly is the difference between let and const. When/where each one of them should be used?
+- What is the skeleton of a function?
+- What type of functions exist (at least within js)?
