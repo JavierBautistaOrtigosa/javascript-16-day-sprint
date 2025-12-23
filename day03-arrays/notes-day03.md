@@ -37,7 +37,7 @@ map
 - Does not modify the original.
 - Common in React for rendering lists.
 
-filterer
+filter
 - Keeps items that match a condition.
 - Returns a new array.
 - Used for immutable removal.
