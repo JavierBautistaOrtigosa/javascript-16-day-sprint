@@ -4,16 +4,18 @@
 //* and combining loops with arrays & objects.
 //* ------------------------------------------------------------
 
-//-> Control Flow: if/else (Guided Practice)
+//-> -----------------------------------------------------------
+//-> Control Flow: if/else. (Guided Practice)
+//-> -----------------------------------------------------------
 
-//-> Step 1 - Basic if:
+//-> Basic if:
 
 // const age = 7;
 // if (age >= 18) {
 //   console.log("Adult");
 // }
 
-//-> Step 2 - if/else:
+//-> if/else:
 
 // if (age >= 18) {
 //   console.log("Adult");
@@ -21,7 +23,7 @@
 //   console.log("Not an adult");
 // }
 
-//-> Step 3 - else/if:
+//-> else/if:
 
 // const score = 85;
 
@@ -33,7 +35,7 @@
 //     console.log("C or below")
 // }
 
-//-> Step 4 - Ternary:
+//-> Ternary:
 
 // const isLoggedIn = false;
 // const message = isLoggedIn ? "Welcome back" : "Please log in";
@@ -43,14 +45,14 @@
 //? condition ? expressionIfTrue : expressionIfFalse
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> 10‑minute drill:
 //-> Write:
-//-> - an if/else checking temperature
-//-> - an if/else if chain for grades
-//-> - a ternary checking if a number is even
+//-> - An if/else checking temperature:
+//-> - An if/else if chain for grades:
+//-> - A ternary checking if a number is even:
 //->  ------------------------------------------------------------
 
-//-> - an if/else checking temperature
+//-> An if/else checking temperature:
 
 // const temp = 10;
 
@@ -60,7 +62,7 @@
 //     console.log("Is not getting warmer yet");
 // };
 
-//-> - an if/else if chain for grades
+//-> An if/else if chain for grades:
 
 // const grade = 7;
 
@@ -74,7 +76,7 @@
 //   console.log("Excellent");
 // }
 
-//-> - a ternary checking if a number is even
+//-> A ternary checking if a number is even:
 
 // const num = 7;
 
@@ -89,7 +91,9 @@
 // const isEven = num%2 === 0 ? "Even" : "Not Even";
 // console.log(isEven);
 
-//-> switch Statements (Guided Practice)
+//-> -----------------------------------------------------------
+//-> switch Statements. (Guided Practice):
+//-> -----------------------------------------------------------
 
 // const day = "Monday";
 
@@ -118,10 +122,10 @@
 // }
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> 10‑minute drill:
 //-> Write a switch for:
-//-> - traffic light colours
-//-> - user roles (admin, editor, viewer)
+//-> - Traffic light colours:
+//-> - User roles (admin, editor, viewer):
 //->  ------------------------------------------------------------
 
 // const colour = "red";
@@ -142,7 +146,9 @@
 //     console.log("This is a traffic light");
 // }
 
-//-> for Loops (Guided Practice)
+//-> -----------------------------------------------------------
+//-> for Loops. (Guided Practice):
+//-> -----------------------------------------------------------
 
 //-> Basic Loop:
 
@@ -170,24 +176,24 @@
 //? Decrement: i-- decreases the index by 1 in each iteration.
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> 10‑minute drill:
 //-> Write loops that:
-//-> - count from 1 to 10
-//-> - count down from 10 to 1
-//-> - loop through an array of names
+//-> - Count from 1 to 10:
+//-> - Count down from 10 to 1:
+//-> - Loop through an array of names:
 //->  ------------------------------------------------------------
 
-//-> - count from 1 to 10
+//-> Count from 1 to 10:
 
 // for (let i = 1; i <= 10; i++) {
 //   console.log(i);
 // }
 
-//-> - count down from 10 to 1
+//-> Count down from 10 to 1:
 
 // for (let i = 10; i >= 1; i--) console.log(i);
 
-//-> - loop through an array of names
+//-> Loop through an array of names:
 
 // let names = ["Javier", "Miriam", "Liam", "Maia"];
 
@@ -196,7 +202,9 @@
 //   console.log(`${names[i]}`);
 // }
 
-//-> while & do…while (Guided Practice)
+//-> -----------------------------------------------------------
+//-> while & do…while. (Guided Practice):
+//-> -----------------------------------------------------------
 
 //-> while:
 
@@ -217,14 +225,14 @@
 // } while (n < 3);
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> 10‑minute drill:
 //-> Write:
-//-> - a while loop counting to 5
-//-> - a do…while loop that runs at least once
-//-> - a while loop iterating through an array
+//-> - A while loop counting to 5:
+//-> - A do…while loop that runs at least once:
+//-> - A while loop iterating through an array:
 //->  ------------------------------------------------------------
 
-//-> - a while loop counting to 5
+//-> A while loop counting to 5:
 
 // let num = 0;
 
@@ -233,14 +241,14 @@
 //   num++;
 // }
 
-//-> - a do…while loop that runs at least once
+//-> A do…while loop that runs at least once:
 
 // do {
 //   console.log(num);
 //   num++;
 // } while (num <= 5);
 
-//-> - a while loop iterating through an array
+//-> A while loop iterating through an array:
 
 // let nums = [1, 2, 3, 4, 5];
 // let i = 0;
@@ -255,7 +263,9 @@
 //? nums[i] accesses each element
 //? i++ moves to the next index
 
-//-> for...of & break / continue (Guided Practice)
+//-> -----------------------------------------------------------
+//-> for...of & break / continue. (Guided Practice)
+//-> -----------------------------------------------------------
 
 // const colours = ["red", "green", "blue"];
 // for (const color of colours) {
@@ -277,14 +287,14 @@
 // }
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> 10‑minute drill:
 //-> Using an array of numbers:
-//-> - stop when you hit 7
-//-> - skip all even numbers
-//-> - print only numbers > 10
+//-> - Stop when you hit 7:
+//-> - Skip all even numbers:
+//-> - Print only numbers > 10:
 //->  ------------------------------------------------------------
 
-//-> - stop when you hit 7
+//-> Stop when you hit 7
 
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
@@ -293,14 +303,14 @@
 //   console.log(num);
 // }
 
-//-> - skip all even numbers
+//-> Skip all even numbers
 
 // for (const num of arr) {
 //   if (num % 2 === 0) continue;
 //   console.log(num);
 // }
 
-//-> - print only numbers > 10
+//-> Print only numbers > 10
 
 // for (const num of arr) {
 //   if (num > 10) {
@@ -309,34 +319,36 @@
 // }
 
 //->  ------------------------------------------------------------
-//-> Deconstruction Drill (Your Signature Style).
+//-> Deconstruction Drill (Your Signature Style):
 
 //-> Base snippet:
 //-> const numbers = [1, 2, 3, 4, 5]
 
 //-> Break into 10 micro‑exercises:
-//-> for loop → print all numbers
-//-> for loop → print only even numbers
-//-> for…of → print all numbers
-//-> while loop → print all numbers
-//-> do…while → print all numbers
-//-> break when number === 3
-//-> continue when number === 2
-//-> if/else → label numbers as even/odd
-//-> switch → label numbers 1–5
-//-> combine: filter numbers > 2 using a loop
-//-> This locks in loop mastery.
+//-> 1) for loop → print all numbers:
+//-> 2) for loop → print only even numbers:
+//-> 3) for…of → print all numbers:
+//-> 4) while loop → print all numbers:
+//-> 5) do…while → print all numbers:
+//-> 6) break when number === 3:
+//-> 7) continue when number === 2:
+//-> 8) if/else → label numbers as even/odd:
+//-> 9) switch → label numbers 1–5:
+//-> 10) combine: filter numbers > 2 using a loop:
 //->  ------------------------------------------------------------
+
+
+//-> Base snippet:
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-//-> for loop → print all numbers
+//-> 1) for loop → print all numbers:
 
 // for (let i = 0; i < numbers.length; i++) {
 //   console.log(`${numbers[i]}`);
 // }
 
-//-> for loop → print only even numbers
+//-> 2) for loop → print only even numbers:
 
 // for (let i = 0; i < numbers.length; i++) {
 //   if (i % 2 === 0) {
@@ -344,13 +356,13 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   }
 // }
 
-//-> for…of → print all numbers
+//-> 3) for…of → print all numbers:
 
 // for (num of numbers) {
 //     console.log(num);
 // }
 
-//-> while loop → print all numbers
+//-> 4) while loop → print all numbers:
 
 // let i = 0;
 
@@ -359,7 +371,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //     i++;
 // }
 
-//-> do…while → print all numbers
+//-> 5) do…while → print all numbers:
 
 // let i = 0;
 
@@ -368,21 +380,21 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   i++;
 // } while (i < numbers.length);
 
-//-> break when number === 3
+//-> 6) break when number === 3:
 
 // for (const num of numbers) {
 //     if (num === 3) break;
 //     console.log(num);
 // }
 
-//-> continue when number === 2
+//-> 7) continue when number === 2:
 
 // for (const num of numbers) {
 //     if (num === 2) continue;
 //     console.log(num);
 // }
 
-//-> if/else → label numbers as even/odd
+//-> 8) if/else → label numbers as even/odd:
 
 // for (const num of numbers) {
 //   if (num % 2 === 0) console.log(num + ` = even`);
@@ -391,7 +403,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   }
 // }
 
-//-> switch → label numbers 1–5
+//-> 9) switch → label numbers 1–5:
 
 // for (let num of numbers) {
 //   switch (num) {
@@ -412,7 +424,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   }
 // }
 
-//-> combine: filter numbers > 2 using a loop
+//-> 10) combine: filter numbers > 2 using a loop:
 
 // for (let num of numbers) {
 //   if (num > 2) {
@@ -421,21 +433,22 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // }
 
 //->  ------------------------------------------------------------
-//-> Mini Project: “Student Grades Analyzer”
+//-> Mini Project: “Student Grades Analyzer”.
 
 //-> Requirements:
 
 //-> Create an array of student objects:
-//->
 
-//-> - Loop through students
-//-> - Count how many passed (>= 60)
-//-> - Count how many failed
-//-> - Find highest grade
-//-> - Find lowest grade
-//-> - Categorise grades using if/else or switch
-//-> - Print results using console.table()
+//-> - 1) Loop through students:
+//-> - 2) Count how many passed (>= 60):
+//-> - 3) Count how many failed:
+//-> - 4) Find highest grade:
+//-> - 5) Find lowest grade:
+//-> - 6) Categorise grades using if/else or switch:
+//-> - 7) Print results using console.table():
 //->  ------------------------------------------------------------
+
+//-> Students array:
 
 const students = [
   { name: "Javier", grade: 85 },
@@ -444,9 +457,9 @@ const students = [
   { name: "Maia", grade: 40 },
 ];
 
-//-> - Loop through students
-//-> - Count how many passed (>= 60)
-//-> - Count how many failed
+//-> 1) Loop through students
+//-> 2) Count how many passed (>= 60)
+//-> 3) Count how many failed
 
 // let passed = 0;
 // let failed = 0;
@@ -467,8 +480,8 @@ const students = [
 //     console.log(test);
 // }
 
-//-> - Find highest grade
-//-> - Find lowest grade
+//-> 4) Find highest grade
+//-> 5) Find lowest grade
 
 // let highesGrade = 0;
 // let lowestGrade = 100;
@@ -487,9 +500,10 @@ const students = [
 // }
 // console.log(lowestGrade);
 
-//-> - Categorise grades using if/else or switch
-//-> - Print results using console.table()
-//! Try creating a small dataset like so:
+//-> 6) Categorise grades using if/else or switch
+//-> 7) Print results using console.table()
+
+//! Bonus: Try creating a small dataset like so:
 //! { name: student.name, grade: student.grade, result: "Great job" }
 //! ... and console.table the results...
 

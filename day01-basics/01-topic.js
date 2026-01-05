@@ -1,20 +1,21 @@
 //* ------------------------------------------------------------
-//* Topic: Variables & Data Types
-//* Description: Brief explanation.
+//* Topic: Variables, Data Types $ Operators
+//* Description: Build a rock‑solid foundation in variables, types, 
+//* operators, strings, and console debugging.
 //* ------------------------------------------------------------
 
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 //-> Your turn (5‑minute drill)
 //-> Create 10 variables:
-//-> 2 strings
-//-> 2 numbers
-//-> 2 booleans
-//-> 1 null
-//-> 1 undefined
-//-> 1 bigint
-//-> 1 symbol
+//-> 2 strings:
+//-> 2 numbers:
+//-> 2 booleans:
+//-> 1 null:
+//-> 1 undefined:
+//-> 1 bigint:
+//-> 1 symbol:
 //-> Then log their types.
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 
 // let car = "Sedan";
 // let animal = "Dog";
@@ -36,10 +37,11 @@
 // console.log(typeof weight); //= undefined
 // console.log(typeof megaNumber); //= bigint
 
+//-> ------------------------------------------------------------
+//-> Operators & Expressions. (Guided Practice).
+//-> ------------------------------------------------------------
 
-//-> Operators & Expressions (Guided Practice).
-
-//-> Step 1 — Arithmetic:
+//-> Arithmetic:
 
 let x = 10
 let y = 3
@@ -52,7 +54,7 @@ let y = 3
 // console.log(x ** y)
 
 
-//-> Step 2 — Comparison:
+//-> Comparison:
 
 // console.log(5 === '5') //? strict
 // console.log(5 == '5')  //? loose
@@ -60,20 +62,20 @@ let y = 3
 // console.log(10 <= 5)
 
 
-//-> Step 3 — Logical:
+//-> Logical:
 
 // console.log(true && false)
 // console.log(true || false)
 // console.log(!true)
 
-//->  ------------------------------------------------------------
-//-> Step 4 — Your 10‑minute drill
+//-> ------------------------------------------------------------
+//-> 10‑minute drill:
 //-> Write:
-//-> 5 arithmetic expressions
-//-> 5 comparison expressions
-//-> 5 logical expressions
+//-> 5 arithmetic expressions:
+//-> 5 comparison expressions:
+//-> 5 logical expressions:
 //-> Predict → then run → compare.
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 
 //-> 5 arithmetic expressions:
 
@@ -117,10 +119,11 @@ let y = 3
 // let n1 = !true;
 // console.log(n1); //= false
 
-
+//-> ------------------------------------------------------------
 //-> Strings & Template Literals (guided practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 - Basic strings:
+//-> Basic strings:
 
 /*
 let city = "Perth";
@@ -128,14 +131,14 @@ let country = "Australia";
 console.log(city, country);
 */
 
-//-> Step 2 - Template literals:
+//-> Template literals:
 
 /*
 let fullLocation = `${city} is a city from ${country}`;
 console.log(fullLocation);
 */
 
-//-> Step 3 - Multi-line:
+//-> Multi-line:
 
 /*
 let msg = `Hi, my name is Javier
@@ -143,14 +146,14 @@ and I am passionate about technology`;
 console.log(msg);
 */
 
-//->  ------------------------------------------------------------
-//-> Step 4 — Your drill:
+//-> ------------------------------------------------------------
+//-> 10‑minute drill:
 //-> Create a template literal that includes:
 //-> your name
 //-> your age
 //-> an expression (${2 + 2})
 //-> a multi‑line message
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 
 // let myName = "Javier";
 // let myAge = 38;
@@ -161,20 +164,21 @@ console.log(msg);
 // multi-line message.`;
 // console.log(test);
 
-
+//-> ------------------------------------------------------------
 //-> Console Mastery (guided practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Logging
+//-> Logging:
 
 // console.log("Testing log...");
 // console.error("Testing error...");
 
-//-> Step 2 — Table
+//-> Table:
 
 // let user = { name: "Javier", age: 38, role: "IT Manager" };
 // console.table(user);
 
-//-> Step 3 — Trigger an error
+//-> Trigger an error:
 
 // let test1 = 10;
 // test1 = 20;
@@ -184,8 +188,8 @@ console.log(msg);
 // test2 = 20;
 // console.log(test2); //! TypeError: Assignment to constant variable.
 
-//->  ------------------------------------------------------------
-//-> Deconstruction Drill (Your Signature Style)
+//-> ------------------------------------------------------------
+//-> Deconstruction Drill. (Your Signature Style):
 //-> We take one snippet and break it into 10 micro‑exercises.
 
 //-> Base Snippet:
@@ -193,19 +197,19 @@ console.log(msg);
 
 //-> Now do these one by one:
 
-//-> Rewrite using function keyword.
-//-> Rewrite with explicit return.
-//-> Rewrite with no parameters.
-//-> Rewrite with two parameters.
-//-> Add a default parameter.
-//-> Log the result.
-//-> Store the result in a variable.
-//-> Change interpolation style.
-//-> Use single quotes inside.
-//-> Add comments explaining each line.
-//->  ------------------------------------------------------------
+//-> 1) Rewrite using function keyword:
+//-> 2) Rewrite with explicit return:
+//-> 3) Rewrite with no parameters:
+//-> 4) Rewrite with two parameters:
+//-> 5) Add a default parameter:
+//-> 6) Log the result:
+//-> 7) Store the result in a variable:
+//-> 8) Change interpolation style:
+//-> 9) Use single quotes inside:
+//-> 10) Add comments explaining each line:
+//-> ------------------------------------------------------------
 
-//-> Rewrite using function keyword:
+//-> 1) Rewrite using function keyword:
 
 // function greeting(nombre) {
 //     console.log(`Hello ${nombre}`);
@@ -213,7 +217,7 @@ console.log(msg);
 
 // greeting("Javier");
 
-//-> Rewrite with explicit return:
+//-> 2) Rewrite with explicit return:
 
 // function greeting(nombre) {
 //     return `Hello ${nombre}`;
@@ -221,7 +225,7 @@ console.log(msg);
 
 // console.log(greeting("Javier"));
 
-//-> Rewrite with no parameters:
+//-> 3) Rewrite with no parameters:
 
 // let nombre = "Javier";
 
@@ -231,7 +235,7 @@ console.log(msg);
 
 // console.log(greeting());
 
-//-> Rewrite with two parameters:
+//-> 4) Rewrite with two parameters:
 
 // function greeting(nombre, age) {
 //     console.log(`My name is ${nombre} and I am ${age} years old`);
@@ -239,7 +243,7 @@ console.log(msg);
 
 // greeting("Javier", 38);
 
-//-> Add a default parameter:
+//-> 5) Add a default parameter:
 
 // let nombre = "Javier";
 
@@ -249,7 +253,7 @@ console.log(msg);
 
 // console.log(greeting("Javier"));
 
-//-> Log the result:
+//-> 6) Log the result:
 
 // function operation(x, y, z = 6) {
 //   return x + y + z;
@@ -257,7 +261,7 @@ console.log(msg);
 
 // console.log(operation(2, 4));
 
-//-> Store the result in a variable:
+//-> 7) Store the result in a variable:
 
 // function operation(x, y, z = 6) {
 //   return x + y + z;
@@ -266,27 +270,33 @@ console.log(msg);
 // let result = operation(2, 4);
 // console.log(result);
 
-//->  ------------------------------------------------------------
-//-> Mini Project: “About Me” Script
-//-> Create a file: about-me.js
+//-> 8) Change interpolation style:
+//-> 9) Use single quotes inside:
+//-> 10) Add comments explaining each line:
+
+//! Not finished
+
+//-> ------------------------------------------------------------
+//-> Mini Project: “About Me” Script.
+//-> Create a file: about-me.js.
 //-> Requirements:
-//-> Variables for name, age, city, job
-//-> A template literal that prints a 3‑line intro
-//-> Use at least 3 operators
-//-> Use console.table()
-//-> Use one function that returns a sentence about you
-//->  ------------------------------------------------------------
+//-> - Variables for name, age, city, job:
+//-> - A template literal that prints a 3‑line intro:
+//-> - Use at least 3 operators:
+//-> - Use console.table():
+//-> - Use one function that returns a sentence about you:
+//-> ------------------------------------------------------------
 
 //-> Create a file: about-me.js (I do it in this file)
 
-//-> Variables for name, age, city, job
+//-> Variables for name, age, city, job:
 
 // const nombre = "Javier";
 // const age = 38;
 // const city = "Perth";
 // const job = "Developer";
 
-//-> A template literal that prints a 3‑line intro
+//-> A template literal that prints a 3‑line intro:
 
 // const msg = `My name is ${nombre}
 // and I am ${age} years old. \n 
@@ -295,18 +305,18 @@ console.log(msg);
 
 // console.log(msg);
 
-//-> Use at least 3 operators
+//-> Use at least 3 operators:
 
 // console.log((3 * 3) / 2 + 5);
 
-//-> Use console.table()
+//-> Use console.table():
 
 // const isEnrolled = true;
 
 // const student = { name: "Javier", diploma: "IT", isEnrolled };
 // console.table(student);
 
-//-> Use one function that returns a sentence about you
+//-> Use one function that returns a sentence about you:
 
 // let myName = "Javier";
 // let age = 38;

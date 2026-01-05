@@ -1,12 +1,14 @@
 //* ------------------------------------------------------------
-//* Topic: Objects & JSON (Full Guided Session)*
+//* Topic: Objects & JSON
 //* Description: Object literals, nested objects, destructuring,
 //* updating objects immutably, JSON.parse/stringify.
 //* ------------------------------------------------------------
 
-//-> Object Basics (Guided Practice):
+//-> -----------------------------------------------------------
+//-> Object Basics. (Guided Practice):
+//-> -----------------------------------------------------------
 
-//-> Step 1 - Create your first object:
+//-> Create your first object:
 
 // const user = {
 //   name: "Javier",
@@ -16,7 +18,7 @@
 
 // console.table(user);
 
-//-> Step 2 - Access properties:
+//-> Access properties:
 
 // console.log(user.name);
 // console.log(user.age);
@@ -26,18 +28,20 @@
 // user.age = 35;
 // console.log(user);
 
-//-> Step 4 - Add new properties:
+//-> Add new properties:
 
 // user.role = "Developer";
 // console.log(user);
 
-//->  ------------------------------------------------------------
-//-> Your 10‑minute drill:
+//-> ------------------------------------------------------------
+//-> 10‑minute drill:
 //-> Create an object representing:
-//-> - a book
-//-> - a car
-//-> - a laptop
-//->  ------------------------------------------------------------
+//-> - A book:
+//-> - A car:
+//-> - A laptop:
+//-> ------------------------------------------------------------
+
+//-> A book:
 
 // const book = {
 //   Author: "Javier",
@@ -45,12 +49,18 @@
 //   Year: 1987,
 //   Publisher: "Fire Publisher",
 // };
+
+//-> A car:
+
 // const car = {
 //   brand: "Mazda",
 //   Model: "Neo 2",
 //   Year: 2016,
 //   Engine: "Petrol",
 // };
+
+//-> A laptop:
+
 // const laptop = {
 //   Brand: "Lenovo",
 //   Year: 2024,
@@ -58,9 +68,11 @@
 //   OS: "Windows 11",
 // };
 
-//-> Nested Objects & Arrays Inside Objects
+//-> ------------------------------------------------------------
+//-> Nested Objects & Arrays Inside Objects. (Guided Practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Create a nested object:
+//-> Create a nested object:
 
 // const person = {
 //   name: "Javier",
@@ -73,13 +85,13 @@
 
 // console.log(person.address.city);
 
-//-> Step 2 — Add an array inside an object:
+//-> Add an array inside an object:
 
 // person.skills = ["JavaScript", "PHP", "Linux"];
 // console.log(person.skills[0]);
 // console.table(person);
 
-//-> Step 3 — Add an object inside an array:
+//-> Add an object inside an array:
 
 // const library = [
 //   { id: 1, title: "Clean Code", pages: 464 },
@@ -88,14 +100,14 @@
 
 // console.log(library[1].title);
 
-//->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> ------------------------------------------------------------
+//-> 10‑minute drill:
 //-> Create an object with:
-//-> - nested object
-//-> - array
-//-> - array of objects
-//-> Access at least 5 nested values.
-//->  ------------------------------------------------------------
+//-> - Nested object:
+//-> - array:
+//-> - array of objects:
+//-> - Access at least 5 nested values.
+//-> ------------------------------------------------------------
 
 // const student = {
 //   name: "Liam",
@@ -120,9 +132,11 @@
 // console.log(student.terms[1]);
 // console.log(student.course[1].id);
 
-//-> Destructuring (Guided Practice)
+//-> ------------------------------------------------------------
+//-> Destructuring. (Guided Practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Basic destructuring:
+//-> Basic destructuring:
 
 // const product = {
 //   nombre: "Laptop",
@@ -133,13 +147,13 @@
 // const { nombre, price } = product;
 // console.log(nombre, price);
 
-// -> Step 2 - Rename Variables:
+// -> Rename Variables:
 
 // const { brand: manufacturer } = product; //? Analogy: Here is like saying I want the property brand: to be also a variable and to be called manufacturer.
 // console.log(product.brand); //= Output: Dell
 // console.log(manufacturer); //= Output: Dell
 
-//-> Step 3 - Nested Destructuring:
+//-> Nested Destructuring:
 
 // const employee = {
 //   id:1,
@@ -168,12 +182,12 @@
 // console.log(secondShortcut); //= Output: paste
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
+//-> 10‑minute drill:
 //-> Destructure:
-//-> - 3 properties
-//-> - 1 nested property
-//-> - 1 array inside an object
-//-> - rename at least 1 variable
+//-> - 3 properties:
+//-> - 1 nested property:
+//-> - 1 array inside an object:
+//-> - Rename at least 1 variable:
 //->  ------------------------------------------------------------
 
 // const student = {
@@ -238,38 +252,40 @@
 //? - If I want to rename the variable while destructuring then...
 //? - const { nombre: new_variable_name_here } = student
 
-//-> Updating Objects (Mutable vs Immutable)
+//-> ------------------------------------------------------------
+//-> Updating Objects (Mutable vs Immutable). (Guided Practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Mutable update:
+//-> Mutable update:
 
 // const car = { brand: "Toyota", year: 2020 };
 // car.year = 2021;
 // console.log(car);
 
-//-> Step 2 — Immutable update (React‑style):
+//-> Immutable update (React‑style):
 
 // const updatedCar = { ...car, year: 2022 };
 // console.log(updatedCar);
 
-//-> Step 3 — Add property immutably:
+//-> Add property immutably:
 
 // const carWithColour = { ...car, colour: "blue" };
 // console.log(carWithColour);
 
-//-> Step 4 — Remove property immutably:
+//-> Remove property immutably:
 
 // const { year, ...carWithoutYear } = car; //? This example is using rest syntax...
 // console.log(carWithoutYear); //? carWithoutYear is a variable, and the value stored inside it is an object.
 
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 //-> Your 10‑minute drill
 //-> - Update an object mutably
 //-> - Update it immutably
 //-> - Add a property immutably
 //-> - Remove a property immutably
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 
-//-> - Update an object mutably
+//-> Update an object mutably:
 
 const diploma = {
   yearStarted: 2025,
@@ -282,19 +298,19 @@ const diploma = {
 
 // console.log(diploma);
 
-//-> - Update it immutably
+//-> Update it immutably:
 
 const daysOfClassUpdated = (diploma.daysOfClass = 5);
 
 // console.log(diploma.daysOfClass);
 // console.log(daysOfClassUpdated);
 
-//-> - Add a property immutably
+//-> Add a property immutably:
 
 // const diplomaUpdated = {...diploma, isPassed: true};
 // console.log(diplomaUpdated);
 
-//-> - Remove a property immutably
+//-> Remove a property immutably
 
 // const {yearStarted, ...diplomaUpdated} = diploma;
 // console.log(diplomaUpdated);
@@ -317,9 +333,11 @@ const daysOfClassUpdated = (diploma.daysOfClass = 5);
 //? - - diploma → unchanged
 //? - - diplomaUpdated → a new object without yearStarted
 
-//-> JSON.parse & JSON.stringify
+//-> ------------------------------------------------------------
+//-> JSON.parse & JSON.stringify. (Guided Practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Convert object → JSON string:
+//-> Convert object → JSON string:
 
 // const user = {
 //   name: "Javier",
@@ -330,25 +348,25 @@ const daysOfClassUpdated = (diploma.daysOfClass = 5);
 // const json = JSON.stringify(user)
 // console.log(json);
 
-//-> Step 2 — Convert JSON string → object:
+//-> Convert JSON string → object:
 
 // const parsed = JSON.parse(json);
 // console.log(parsed);
 
-//-> Step 3 — Realistic example:
+//-> Realistic example:
 
 // const apiResponse = '{"id":1,"name":"Javier","role":"IT Manager"}'
 // const data = JSON.parse(apiResponse)
 // console.log(data.name)
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill
-//-> - Convert an object to JSON
-//-> - Convert JSON back to object
-//-> - Access nested values
+//-> 10‑minute drill:
+//-> - Convert an object to JSON:
+//-> - Convert JSON back to object:
+//-> - Access nested values:
 //->  ------------------------------------------------------------
 
-//-> - Object:
+//-> Object:
 
 // const car = {
 //   brand: "Mazda",
@@ -358,22 +376,23 @@ const daysOfClassUpdated = (diploma.daysOfClass = 5);
 
 // console.log(car);
 
-//-> - Convert an object to JSON
+//-> Convert an object to JSON
 
 // const car_json = JSON.stringify(car);
 // console.log(car_json);
 
-//-> - Convert JSON back to object
+//-> Convert JSON back to object
 
 // const car_json_parsed = JSON.parse(car_json);
 // console.log(car_json_parsed);
 
-//-> - Access nested values
+//-> Access nested values
 
 // console.log(car_json_parsed.brand);
 
 //-> ------------------------------------------------------------
-//-> Deconstruction Drill (Your Signature Style)
+//-> Deconstruction Drill. (Your Signature Style):
+//-> ------------------------------------------------------------
 
 //-> Base snippet:
 //-> const book = {
@@ -383,17 +402,16 @@ const daysOfClassUpdated = (diploma.daysOfClass = 5);
 //-> }
 
 //-> Break into 10 micro‑exercises:
-//-> - Access title
-//-> - Access author.first
-//-> - Add a new property
-//-> - Update pages
-//-> - Remove pages immutably
-//-> - Destructure title
-//-> - Destructure author.last
-//-> - Convert to JSON
-//-> - Parse JSON back
-//-> - Create a new object with updated title (immutable)
-//-> This locks in everything.
+//-> 1) Access title
+//-> 2) Access author.first
+//-> 3) Add a new property
+//-> 4) Update pages
+//-> 5) Remove pages immutably
+//-> 6) Destructure title
+//-> 7) Destructure author.last
+//-> 8) Convert to JSON
+//-> 9) Parse JSON back
+//-> 10) Create a new object with updated title (immutable)
 //-> ------------------------------------------------------------
 
 // let book = {
@@ -402,50 +420,50 @@ const daysOfClassUpdated = (diploma.daysOfClass = 5);
 //   pages: 464,
 // };
 
-//-> - Access title
+//-> 1) Access title:
 
 // console.log(book.title);
 
-//-> - Access author.first
+//-> 2) Access author.first:
 
 // console.log(book.author.first);
 
-//-> - Add a new property
+//-> 3) Add a new property:
 
 // book = { ...book, year: 2015 };
 // console.log(book);
 
-//-> - Update pages
+//-> 4) Update pages:
 
 // book.pages = 500;
 // console.log(book);
 
-//-> - Remove pages immutably
+//-> 5) Remove pages immutably:
 
 // let {pages, ...bookUpdatedPages} = book;
 // console.log(bookUpdatedPages);
 
-//-> - Destructure title
+//-> 6) Destructure title:
 
 // let {title} = book;
 // console.log(title);
 
-//-> - Destructure author.last
+//-> 7) Destructure author.last:
 
 // let {author: {last}} = book;
 // console.log(last);
 
-//-> - Convert to JSON
+//-> 8) Convert to JSON:
 
 // let json = JSON.stringify(book);
 // console.log(json);
 
-//-> - Parse JSON back
+//-> 9) Parse JSON back:
 
 // let json_parsed_back = JSON.parse(json);
 // console.log(json_parsed_back);
 
-//-> - Create a new object with updated title (immutable)
+//-> 10) Create a new object with updated title (immutable):
 
 // Deep Clone Version 1 — structuredClone() (best modern option)
 // let deepClone = structuredClone(book);
@@ -470,24 +488,24 @@ const daysOfClassUpdated = (diploma.daysOfClass = 5);
 //! Not suitable for complex objects
 
 //-> ------------------------------------------------------------
-//-> Mini Project: “Library Manager (Objects Version)”
+//-> Mini Project: “Library Manager (Objects Version)”:
 //-> Create a file: `library-manager.js`
 
 //-> Requirements:
-//-> - Create an array of book objects
-//-> - Add a new book immutably
-//-> - Remove a book immutably
-//-> - Update a book immutably
-//-> - Find a book by ID
-//-> - Filter books by page count
-//-> - Convert the entire library to JSON
-//-> - Parse it back
+//-> 1) Create an array of book objects:
+//-> 2) Add a new book immutably:
+//-> 3) Remove a book immutably:
+//-> 4) Update a book immutably:
+//-> 5) Find a book by ID:
+//-> 6) Filter books by page count:
+//-> 7) Convert the entire library to JSON:
+//-> 8) Parse it back:
 
-//-> Bonus:
+//-> 9) Bonus:
 //-> Use `console.table()` to display the library.
 //-> ------------------------------------------------------------
 
-//-> - Create an array of book objects
+//-> 1) Create an array of book objects:
 
 const bookInventory = [
   { id: 0, title: "Fire", yearPublished: 2025 },
@@ -500,10 +518,12 @@ const bookInventory = [
 
 console.log(bookInventory);
 
-//-> - Add a new book immutably
+//-> 2) Add a new book immutably:
 
 const bookInventoryUpdated = [...bookInventory, {id: 3, title: "Peace", yearPublished: 2025}];
 console.log(bookInventoryUpdated);
+
+//! Not finished
 
 
 

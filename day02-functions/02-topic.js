@@ -1,11 +1,14 @@
 //* ------------------------------------------------------------
-//* Topic: Functions Mastery
-//* Description: Brief explanation.
+//* Topic: Functions Mastery.
+//* Description: Function declarations, expressions, arrow functions, 
+//* parameters, return, scope, pure functions.
 //* ------------------------------------------------------------
 
+//-> -----------------------------------------------------------
 //-> Function Declarations (Guided Practice):
+//-> -----------------------------------------------------------
 
-//-> Step 1 — Type this:
+//-> Type this:
 
 // function greet() {
 //   console.log("Hello from a function");
@@ -13,7 +16,7 @@
 
 // greet();
 
-//-> Step 2 — Add parameters:
+//-> Add parameters:
 
 // function greetUser(name) {
 //   console.log(`Hello ${name}`);
@@ -21,7 +24,7 @@
 
 // greetUser("Javier");
 
-//-> Step 3 — Add a return value:
+//-> Add a return value:
 
 // function add(a, b) {
 //   return a + b;
@@ -31,14 +34,14 @@
 // let result = console.log(add(2, 2)); //? Same thing but storing the return in a variable.
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill:
+//-> 10‑minute drill:
 //-> Write 5 functions:
-//-> 1 with no parameters
-//-> 1 with one parameter
-//-> 1 with two parameters
-//-> 1 that returns a string
-//-> 1 that returns a number
-//-> Run all of them.
+//-> - 1 with no parameters:
+//-> - 1 with one parameter:
+//-> - 1 with two parameters:
+//-> - 1 that returns a string:
+//-> - 1 that returns a number:
+//-> - Run all of them:
 //->  ------------------------------------------------------------
 
 //-> 1 with no parameters:
@@ -80,9 +83,11 @@
 
 // console.log(typeof(numTest(10)));
 
+//-> -----------------------------------------------------------
 //-> Function Expressions (Guided Practice):
+//-> -----------------------------------------------------------
 
-//-> Step 1 - Basic expression:
+//-> Basic expression:
 
 // const multiply = function (x, y) {
 //   return x * y;
@@ -90,7 +95,7 @@
 
 // console.log(multiply(2, 2));
 
-//-> Step 2 — Anonymous function:
+//-> Anonymous function:
 
 // const sayHi = function () {
 //   console.log("Hi");
@@ -98,14 +103,16 @@
 
 // sayHi();
 
-//-> Step 3 - Store Result:
+//-> Store Result:
 
 // const result = multiply(10, 2); //? Function defined in Step 1.
 // console.log(result);
 
-//* Arrow Functions (Guided Practice):
+//-> -----------------------------------------------------------
+//-> Arrow Functions (Guided Practice):
+//-> -----------------------------------------------------------
 
-//-> Step 1 - Basic arrow function:
+//-> Basic arrow function:
 
 // const square = (n) => {
 //   return n * n;
@@ -113,7 +120,7 @@
 
 // console.log(square(5));
 
-//-> Step 2 - Implicit return:
+//-> Implicit return:
 
 // const double = (n) => n * 2;
 // Why the example has (n) with no parenthesis
@@ -121,21 +128,27 @@
 
 // console.log(double(8));
 
-//-> Step 3 - No params:
+//-> No params:
 
 // const getRandom = () => Math.random();
 // console.log(getRandom());
 
-//-> Step 4 - Multiple params:
+//-> Multiple params:
 
 // const fullName = (first, last) => `${first} ${last}`;
 // console.log(fullName("Javier", "Bautista"));
 
-//-> Your 10 minute Drill.
+//-> -----------------------------------------------------------
+//-> Your 10 minute Drill:
+//-> Convert your 5 functions from earlier into function expressions:
+//-> - 1 with no parameters:
+//-> - 1 with one parameter:
+//-> - 1 with two parameters:
+//-> - 1 that returns a string:
+//-> - 1 that returns a number:
+//-> -----------------------------------------------------------
 
-//-> Convert your 5 functions from earlier into function expressions.
-
-//-> 1 with no parameters
+//-> 1 with no parameters:
 
 // function sayHello() {
 //     console.log("Hello");
@@ -146,7 +159,7 @@
 // const sayHello = () => console.log("Hello!");
 // sayHello();
 
-//-> 1 with one parameter
+//-> 1 with one parameter:
 
 // function sayHello(name) {
 //     console.log(`Hello ${name}`);
@@ -157,7 +170,7 @@
 // const sayGoodbye = (param) => console.log(param);
 // sayGoodbye("Goodbye!");
 
-//-> 1 with two parameters
+//-> 1 with two parameters:
 
 // function sayHello(name, age) {
 //     console.log(`Hello ${name}. Are you ${age} years old?`);
@@ -167,7 +180,7 @@
 // const sayTwoWords = (param1, param2) => console.log(param1 + param2);
 // sayTwoWords("Hello!", "Goodbye!");
 
-//-> 1 that returns a string
+//-> 1 that returns a string:
 
 // function stringTest(name) {
 //     return name;
@@ -178,7 +191,7 @@
 // const showType = (param) => console.log(param);
 // showType(`Javier is a ${typeof "Javier"}.`);
 
-//-> 1 that returns a number
+//-> 1 that returns a number:
 
 // function numTest(num) {
 //     return num;
@@ -189,9 +202,11 @@
 // const numTest = (param) => console.log(param);
 // numTest(`10 is a ${typeof 10}.`);
 
-//-> Function Expressions (guided practice):
+//-> ------------------------------------------------------------
+//-> Function Expressions. (guided practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 - Basic expression:
+//-> Basic expression:
 
 // const multiply = function (x, y) {
 //   return x * y;
@@ -202,7 +217,7 @@
 // const multiply = (x, y) => x * y;
 // console.log(multiply(2, 2));
 
-//-> Step 2 - Anonymous function:
+//-> Anonymous function:
 
 // const sayHi = function () {
 // console.log("Hi");
@@ -213,7 +228,7 @@
 // const sayHi = () => console.log("Hi");
 // sayHi();
 
-//-> Step 3 - Store Result:
+//-> Store Result:
 
 // const result = multiply(10, 2);
 // console.log(result);
@@ -221,16 +236,19 @@
 // const result = multiply(2, 2);
 // console.log(result);
 
-//* Parameters, Defaults & Return (Guided Practice)
+//-> ------------------------------------------------------------
+//-> Parameters, Defaults & Return. (Guided Practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Default parameters:
+//-> Default parameters:
 
 // const greetAgain = (name = "friend") => `Hello ${name}`
 // console.log(greetAgain());
 
-//-> Step 2 — Return early:
+//-> Return early:
 
 //? Is the following like an implicit else?
+
 // const isAdult = (age) => {
 //     if (age < 18) return false;
 //     return true;
@@ -245,7 +263,7 @@
 //? - If the condition is false (meaning age is 18 or older), the function continues to the next line and returns true.
 //? - Because the first return exits early, the second return only runs if the first condition is not met, effectively acting like an else branch without explicitly writing else.
 
-//-> Step 3 — Return objects:
+//-> Return objects:
 
 // const makeUser = (name, age) => ({
 //     name, age, role: "student"
@@ -259,14 +277,14 @@
 //? - Without parentheses, JavaScript interprets the curly braces {} as the start of a function block, not an object.
 //? - So the parentheses tell JavaScript "this is an expression (an object), not a block," allowing the object to be returned directly.
 
-//->  ------------------------------------------------------------
+//-> ------------------------------------------------------------
 //-> Your 10‑minute drill
 //-> Write:
-//-> A function with a default parameter
-//-> A function that returns early
-//-> A function that returns an object
-//-> A function that returns a template literal
-//->  ------------------------------------------------------------
+//-> - A function with a default parameter:
+//-> - A function that returns early:
+//-> - A function that returns an object:
+//-> - A function that returns a template literal:
+//-> ------------------------------------------------------------
 
 //-> A function with a default parameter:
 
@@ -309,9 +327,11 @@ const composePhrase = (string1, string2, string3) =>
 console.log(composePhrase("Javier", "Student", "Diploma IT"));
 */
 
-//-> Scope (Guided Practice)
+//-> ------------------------------------------------------------
+//-> Scope. (Guided Practice):
+//-> ------------------------------------------------------------
 
-//-> Step 1 — Block scope:
+//-> Block scope:
 
 // let x = 10;
 
@@ -322,7 +342,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // console.log("Outside block", x);
 
-//-> Step 2 — Function scope:
+//-> Function scope:
 
 // function testScope() {
 //   const message = "Inside function";
@@ -332,7 +352,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 // testScope();
 // console.log(message); //! Error
 
-//-> Step 3 — Global vs local:
+//-> Global vs local:
 
 // let counter = 0;
 
@@ -356,18 +376,18 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 //? MDN: Scopehttps://developer.mozilla.org/en-US/docs/Glossary/Scope
 
 //->  ------------------------------------------------------------
-//-> Your 10‑minute drill:
+//-> 10‑minute drill:
 //-> Show me the following: Write 3 examples:
-//-> One showing block scope
-//-> One showing function scope
-//-> One showing global variable mutation
+//-> - One showing block scope:
+//-> - One showing function scope:
+//-> - One showing global variable mutation:
 //->  ------------------------------------------------------------
 
 //-> Block Scope:
 
 // {
 //   let msg = "Inside block!";
-//   console.log(msg); //* Accessible inside block.
+//   console.log(msg); //! Accessible inside block.
 // }
 
 // console.log(msg); //! Reference error: msg is not defined.
@@ -376,13 +396,13 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // function test() {
 //     let num = 10;
-//     console.log(num); //* Accessible only inside this function.
+//     console.log(num); //! Accessible only inside this function.
 // }
 
 // test();
 // console.log(num); //! Reference error: num is not defined.
 
-//-> Global variable mutation (example 1):
+//-> Global variable mutation. (Example 1):
 
 // let myName = "Javier";
 
@@ -404,7 +424,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 //? Outside the function:
 //? The global myName is still "Javier" because you never reassigned it.
 
-//-> Global variable mutation (example 2):
+//-> Global variable mutation. (Example 2):
 
 // let num = 10; //! Global variable
 
@@ -417,27 +437,25 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 // console.log(num); //= 11 (Global variable changed)
 
 //->  ------------------------------------------------------------
-//-> Deconstruction Drill (Your Signature Style)
+//-> Deconstruction Drill. (Your Signature Style):
 
-//->Base snippet:
+//-> Base snippet:
 //-> const greeting = (name) => `Hello ${name}`
 
 //-> Break into 10 micro‑exercises:
-//-> Rewrite as a function declaration:
-//-> Rewrite as a function expression:
-//-> Rewrite with explicit return:
-//-> Bonus: Implicit return:
-//-> Add a default parameter:
-//-> Add two parameters:
-//-> Return an object:
-//-> Return a template literal:
-//-> Add validation (if no name → return error):
-//-> Add comments explaining each line:
-//-> Store the result in a variable and log it:
-//-> This locks in all function syntax patterns.
+//-> 1) Rewrite as a function declaration:
+//-> 2) Rewrite as a function expression:
+//-> 3) Rewrite with explicit return:
+//-> 4) Bonus: Implicit return:
+//-> 5) Add a default parameter:
+//-> 6) Add two parameters:
+//-> 7) Return an object:
+//-> 8) Return a template literal:
+//-> 9) Add validation (if no name → return error):
+//-> 10) Store the result in a variable and log it:
 //->  ------------------------------------------------------------
 
-//-> Function declaration:
+//-> 1) Rewrite as a function declaration:
 
 // function greetingTest1(name) {
 //   console.log(`Hello ${name}`);
@@ -445,7 +463,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // greetingTest1("Javier");
 
-//-> Function expression:
+//-> 2) Rewrite as a function expression:
 
 // const greetingTest2 = function (name) {
 //   console.log(`Hello ${name}`);
@@ -453,7 +471,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // greetingTest2("Miriam");
 
-//-> Explicit return:
+//-> 3) Rewrite with explicit return:
 
 // const greetingTest3 = function (name) {
 //   return `Hello ${name}`;
@@ -461,12 +479,12 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // console.log(greetingTest3("Liam"));
 
-//-> Bonus: Implicit return:
+//-> 4) Bonus: Implicit return:
 
 // const greetingTest4 = (name) => `Hello ${name}`;
 // console.log(greetingTest4("Maia"));
 
-//-> Default param:
+//-> 5) Add a default parameter:
 
 // function add(n1, n2 = 2) {
 //   return n1 + n2;
@@ -474,7 +492,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // console.log(add(1));
 
-//-> 2 Parameters
+//-> 6) Add two parameters:
 
 // function multipleParams(n1, n2, n3 = 2) {
 //   return n1 + n2 + n3;
@@ -482,7 +500,7 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 
 // console.log(multipleParams(2, 2));
 
-//-> Returning an object:
+//-> 7) Return an object:
 
 // function car(brand, model, year) {
 //   return { Brand: brand, Model: model, Year: year };
@@ -499,3 +517,9 @@ console.log(composePhrase("Javier", "Student", "Diploma IT"));
 // });
 
 // console.table(secondCar("Mazda", "Neo", 2016));
+
+//-> 8) Return a template literal:
+//-> 9) Add validation (if no name → return error):
+//-> 10) Store the result in a variable and log it:
+
+//! Not finished

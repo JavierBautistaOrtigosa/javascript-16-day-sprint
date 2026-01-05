@@ -1,45 +1,58 @@
-//-> Selecting Elements (Guided Practice)
+//* ------------------------------------------------------------
+//* Topic: DOM Manipulation.
+//* Description: Selecting elements, editing text & attributes,
+//* creating/removing elements, events, forms, and dynamic UI updates.
+//* ------------------------------------------------------------
 
-//-> Step 1 - Select by ID:
+//-> -----------------------------------------------------------
+//-> Selecting Elements (Guided Practice):
+//-> -----------------------------------------------------------
+
+//-> Select by ID:
 
 // const title = document.getElementById("title");
 // console.log(title);
 
-//-> Step 2 - Select by class:
+//-> Select by class:
 
 // const message = document.querySelector(".message"); //! Watch out for the . otherwise is null.
 // console.log(message);
 
-//-> Step 3 - Select multiple elements:
+//-> Select multiple elements:
 
 // const paragraphs = document.querySelectorAll("p");
 // console.log(paragraphs);
 
-//-> Step 4 - Modify text:
+//-> Modify text:
 
 // title.textContent = "DOM Manipulation Day!";
 // message.textContent = "Let's learn DOM like a pro";
 
-//-> 10‑minute drill
+//-> -----------------------------------------------------------
+//-> 10‑minute drill:
 //-> Write:
-//-> - select an element by ID
-//-> - select an element by class
-//-> - select all elements of a tag
-//-> - change text of at least 2 elements
+//-> - Select an element by ID.
+//-> - select an element by class.
+//-> - Select all elements of a tag.
+//-> - change text of at least 2 elements.
+//-> -----------------------------------------------------------
 
-//-> - select an element by ID
+//-> Select an element by ID:
+
 // const message = document.getElementById('message');
 // console.log(message);
 
-//-> - select an element by class
+//-> Select an element by class:
+
 // const title = document.getElementsByClassName('title');
 // console.log(title);
 
-//-> - select all elements of a tag
+//-> Select all elements of a tag:
+
 // const allHeadings = document.querySelectorAll('h1');
 // console.log(allHeadings);
 
-//-> - change text of at least 2 elements
+//-> Change text of at least 2 elements:
 
 // Change the #message element
 // message.textContent = 'Updated via ID Selection';
@@ -49,7 +62,9 @@
 // console.log(heading);
 // heading.textContent = "Heading updated via ID Selection"
 
-//-> Editing Styles & Attributes (Guided Practice)
+//-> -----------------------------------------------------------
+//-> Editing Styles & Attributes (Guided Practice):
+//-> -----------------------------------------------------------
 
 //-> Change styles:
 
@@ -69,39 +84,45 @@ message.classList.toggle("active");
 title.setAttribute("data-level", "beginner");
 console.log(title.getAttribute("data-level"));
 
-//-> 10‑minute drill
+//-> -----------------------------------------------------------
+//-> 10‑minute drill:
 //-> Write:
-//-> - change color of an element
-//-> - add a class
-//-> - remove a class
-//-> - toggle a class
-//-> - add a custom attribute
+//-> - Change color of an element.
+//-> - Add a class.
+//-> - Remove a class.
+//-> - Toggle a class.
+//-> - Add a custom attribute.
+//-> -----------------------------------------------------------
+
+//-> Accessing an element by id and store it as a variable:
 
 // const info = document.getElementById("info");
 
-//-> - change color of an element
+//-> Change color of an element:
 
 // info.style.color = "green";
 
-//-> - add a class
+//-> Add a class:
 
 // info.classList.add("classAdded");
 
-//-> - remove a class
+//-> Remove a class:
 
 // info.classList.add("anotherClassAdded");
 // info.classList.remove("anotherClassAdded");
 
-//-> - toggle a class
+//-> Toggle a class:
 
 // info.classList.toggle("active");
 
-//-> - add a custom attribute
+//-> Add a custom attribute:
 
 // info.setAttribute("info", "general");
 // console.log(info.getAttribute("info"));
 
-//-> Creating & Removing Elements (Guided Practice)
+//-> -----------------------------------------------------------
+//-> Creating & Removing Elements (Guided Practice):
+//-> -----------------------------------------------------------
 
 //-> Create an element:
 
@@ -124,14 +145,15 @@ console.log(title.getAttribute("data-level"));
 
 // new__item.remove();
 
-//-> 10‑minute drill
+//-> -----------------------------------------------------------
+//-> 10‑minute drill:
 //-> Write:
-//-> - create 3 elements
-//-> - append them
-//-> - remove one
-//-> - insert one before another element
-
-//-> - create 3 elements
+//-> - Create 3 elements.
+//-> - Append them.
+//-> - Remove one.
+//-> - Insert one before another element.
+//-> - Create 3 elements.
+//-> -----------------------------------------------------------
 
 // const first__element = document.createElement("h3");
 // const second__element = document.createElement("h2");
@@ -140,21 +162,23 @@ console.log(title.getAttribute("data-level"));
 // second__element.textContent = "I am the second element";
 // third__element.textContent = "I am the third element";
 
-//-> - append them
+//-> Append them
 
 // document.body.appendChild(first__element);
 // document.body.appendChild(second__element);
 // document.body.appendChild(third__element);
 
-//-> - remove one
+//-> Remove one
 
 // first__element.remove()
 
-//-> - insert one before another element
+//-> Insert one before another element
 
 // third__element.after(second__element);
 
+//-> -----------------------------------------------------------
 //-> Event Listeners (Guided Practice)
+//-> -----------------------------------------------------------
 
 // Added to the HTML:
 // <button id="btn">Click me</button>
@@ -181,12 +205,14 @@ console.log(title.getAttribute("data-level"));
 //     message.classList.toggle("active");
 // })
 
-//-> 10‑minute drill
+//-> -----------------------------------------------------------
+//-> 10‑minute drill:
 //-> Write events for:
-//-> - click
-//-> - mouseover
-//-> - mouseout
-//-> - double click
+//-> - Click.
+//-> - Mouseover.
+//-> - Mouseout.
+//-> - Double click.
+//-> -----------------------------------------------------------
 
 // Added HTML:
 // <button id="btn__secondary">Click me</button>
@@ -195,34 +221,36 @@ console.log(title.getAttribute("data-level"));
 const btn__secondary = document.getElementById("btn__secondary");
 const text__test = document.getElementById("text__test");
 
-//-> - click
+//-> Click:
 
 btn__secondary.addEventListener("click", () => {
   console.log("Button Clicked");
   text__test.textContent = "I have been clicked!";
 });
 
-//-> - mouseover
+//-> Mouseover:
 
 btn__secondary.addEventListener("mouseover", () => {
   btn__secondary.style.color = "orange";
   text__test.style.fontSize = "64px";
 });
 
-//-> - mouseout
+//-> Mouseout:
 
 btn__secondary.addEventListener("mouseout", () => {
   btn__secondary.style.color = "black";
   text__test.style.fontSize = "16px";
 });
 
-//-> - double click
+//-> Double click:
 
 btn__secondary.addEventListener("dblclick", () => {
   text__test.textContent = "Double click detected";
 });
 
-//-> Forms & Input Handling (Guided Practice)
+//-> -----------------------------------------------------------
+//-> Forms & Input Handling (Guided Practice):
+//-> -----------------------------------------------------------
 
 //-> Select elements:
 
@@ -239,9 +267,11 @@ submit__btn.addEventListener("click", () => {
   name__input.value = ""; //? Clear input. Note: The placeholder still remains.
 });
 
-//-> 10‑minute drill
+//-> -----------------------------------------------------------
+//-> 10‑minute drill:
 //-> Write:
-//-> - read input
-//-> - display it
-//-> - clear input
-//-> - show error if empty
+//-> - Read input:
+//-> - Display it:
+//-> - Clear input:
+//-> - Show error if empty:
+//-> -----------------------------------------------------------
