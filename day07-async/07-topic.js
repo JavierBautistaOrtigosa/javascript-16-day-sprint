@@ -185,7 +185,6 @@
 
 // const promise = new Promise((resolve, reject) => {
 //   const success = true;
-//   //   const success = false;
 
 //   if (success) resolve("Operation Succeesful");
 //   else reject("Operation failed");
@@ -196,6 +195,11 @@
 // promise
 //   .then((result) => console.log(result))
 //   .catch((error) => console.error(error));
+
+//? Note:
+//? resolve(value) → puts value inside the envelope and marks it as fulfilled.
+//? .then(handler) → opens the envelope and hands value to handler.
+//? .catch(handler) → opens the envelope reject() and hands value to handler.
 
 //-> Promise with timeout:
 //? Note: A Promise is a cleaner, more structured way to handle asynchronous operations without nesting callbacks.
@@ -214,11 +218,19 @@
 
 //-> Convert Promise to async/await:
 
-// function wait(ms) {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve("Done"), ms);
-//   });
-// }
+//? Promise:
+
+wait = (ms) => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(`Done in ${ms}ms`), ms);
+  });
+};
+
+//? .then:
+
+// wait(1000).then((msg) => console.log(msg));
+
+//? async/await:
 
 // async function run() {
 //   const result = await wait(1000);
@@ -231,7 +243,7 @@
 
 // async function run() {
 //   try {
-//     const result = await Promise.reject("Not done");
+//     const result = await Promise.reject("Something went wrong");
 //     console.log(result);
 //   } catch (error) {
 //     console.error("Caught:", error);
@@ -247,3 +259,43 @@
 //-> - Use await on a Promise:
 //-> - Handle errors with try/catch:
 //-> -----------------------------------------------------------
+
+//-> - An async function:
+
+async function f() {
+    console.log("Hello from an async function!")
+}
+
+f();
+
+//-> - Use await on a Promise:
+
+async function f() {
+  const promise = new Promise(resolve => {
+    resolve('Hello from a Promise');
+  });
+
+  const result = await promise;
+  console.log(result);
+}
+
+f();
+
+
+//-> - Handle errors with try/catch:
+
+async function f() {
+  try {
+    const promise = new Promise((resolve, reject) => {
+      reject('Something went wrong');
+    });
+
+    const result = await promise; 
+    console.log(result);
+
+  } catch (error) {
+    console.log('Caught:', error);
+  }
+}
+
+f();
