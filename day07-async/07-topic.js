@@ -220,11 +220,11 @@
 
 //? Promise:
 
-wait = (ms) => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(`Done in ${ms}ms`), ms);
-  });
-};
+// wait = (ms) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(`Done in ${ms}ms`), ms);
+//   });
+// };
 
 //? .then:
 
@@ -262,40 +262,42 @@ wait = (ms) => {
 
 //-> - An async function:
 
-async function f() {
-    console.log("Hello from an async function!")
-}
+// async function f() {
+//     console.log("Hello from an async function!")
+// }
 
-f();
+// f();
 
 //-> - Use await on a Promise:
 
-async function f() {
-  const promise = new Promise(resolve => {
-    resolve('Hello from a Promise');
-  });
+// async function f() {
+//   const promise = new Promise(resolve => {
+//     resolve('Hello from a Promise');
+//   });
 
-  const result = await promise;
-  console.log(result);
-}
+//   const result = await promise;
+//   console.log(result);
+// }
 
-f();
+// f();
 
 
 //-> - Handle errors with try/catch:
 
-async function f() {
-  try {
-    const promise = new Promise((resolve, reject) => {
-      reject('Something went wrong');
-    });
+// async function f() {
+//   try {
+//     const promise = new Promise((resolve, reject) => {
+//       reject('Something went wrong');
+//     });
 
-    const result = await promise; 
-    console.log(result);
+//     const result = await promise; 
+//     console.log(result);
 
-  } catch (error) {
-    console.log('Caught:', error);
-  }
-}
+//   } catch (error) {
+//     console.log('Caught:', error);
+//   }
+// }
 
-f();
+// f();
+
+console.log("Hey");
